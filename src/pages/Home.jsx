@@ -5,9 +5,6 @@ import { Box, Tabs, Tab, Button } from "@mui/material";
 const Home = () => {
     const [activeTab, setActiveTab] = useState(0);
 
-    const handleChange = (newValue) => {
-        setActiveTab(newValue);
-    };
     return (
         <div>
             <Link to="/home/sports/">go to sports</Link>
@@ -15,7 +12,6 @@ const Home = () => {
                 <Tabs
                     value={activeTab}
                     onChange={(_event, newValue) => setActiveTab(newValue)}
-
                     sx={{
                         "& .MuiTab-root": { 
                             textTransform: "none",
